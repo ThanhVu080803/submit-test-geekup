@@ -1,0 +1,37 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.loading-spinner {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+}
+
+.loading-spinner-circle {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgb(51 175 166) transparent rgb(51 175 166) rgb(51 175 166);
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading-spinner-center {
+    position: absolute;
+    inset: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 9999px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

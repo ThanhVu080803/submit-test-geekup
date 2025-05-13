@@ -1,0 +1,31 @@
+- Sử dụng ReactJS để xây dựng project
+- Công nghệ / thư viện áp dụng:
+  + React Router (react-router-dom)
+
+	Lý do: Dùng để định tuyến giữa các trang trong ứng dụng React SPA, cho phép chuyển trang mà không reload lại toàn bộ ứng dụng.
+
+	Cụ thể: Dùng useParams để lấy id từ URL, Link để điều hướng nội bộ.
+
+  + React Hooks (useState, useEffect)
+
+	Lý do: Cung cấp khả năng quản lý state và side effects trong component function thay vì dùng class.
+
+	Cụ thể: useState để lưu dữ liệu người dùng, album và trạng thái loading. useEffect để load dữ liệu khi component mount hoặc id 	thay đổi.
+
+  + Custom API Services (userApi, albumApi)
+
+	Lý do: Tách riêng các request HTTP ra khỏi component, giúp code sạch và dễ bảo trì.
+
+  + Custom Components
+
+	Avatar: Hiển thị avatar bằng chữ cái đầu tên người dùng.
+
+	LoadingSpinner: Hiển thị spinner khi dữ liệu đang được load.
+
+	Lý do: Tái sử dụng các phần tử UI, giảm trùng lặp code.
+
+  + CSS Module riêng cho page
+
+	Lý do: Tạo style riêng cho từng component/page giúp quản lý và maintain dễ dàng hơn.
+
+	Cụ thể: Thêm style cho breadcrumb, header, button, và layout.

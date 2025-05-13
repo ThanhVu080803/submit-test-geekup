@@ -1,0 +1,127 @@
+.album-detail-container {
+  padding: 1.25rem;
+}
+
+.album-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.user-name {
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.user-name:hover {
+  text-decoration: underline;
+}
+
+.user-email {
+  color: #374151;
+  text-decoration: underline;
+}
+
+.album-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .photos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.photo-item {
+  display: block;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.2s;
+}
+
+.photo-item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.photo-title {
+  padding: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.breadcrumb-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.breadcrumb-link {
+  color: #6b7280;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  color: #9ca3af;
+}
+
+.breadcrumb-current {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Header title với icon back */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.back-button {
+  font-size: 20px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  color: #374151;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}

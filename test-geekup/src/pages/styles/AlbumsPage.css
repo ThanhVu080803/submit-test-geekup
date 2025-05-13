@@ -1,0 +1,127 @@
+.album-page {
+    padding: 20px;
+}
+
+.album-title {
+    color: rgb(11 123 122);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+.album-search-box {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.album-search-input {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 320px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.album-search-input:focus {
+    border-color: #33afa6;
+}
+
+
+.album-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 1rem;
+}
+
+.album-table th,
+.album-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.album-table th {
+    color: #4b5563;
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.album-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+.album-user-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: #6b7280;
+}
+
+.album-user-cell img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.album-view-button {
+    background-color: #33afa6;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.album-view-button:hover {
+    background-color: #28a799;
+}
+
+.album-view-button:active {
+    background-color: #33afa6;
+}
+
+
+.album-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.album-page-button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.album-page-button:hover {
+    background-color: #f3f4f6;
+}
+
+.album-page-button.active {
+    background-color: #33afa6;
+    color: white;
+    border-color: #33afa6;
+}
